@@ -20,6 +20,11 @@ function cb(err, res, html) {
 ///////////////////////////////////
 function cb(err, res, html) {
   if(err){
+    
+    if(err){
+    console.log("Error!!!");
+  }
+    
     console.log("Error!!!");
   }
   if (!err) {
