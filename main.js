@@ -89,3 +89,7 @@ function allMatchPageCb(err, res, html) {
     console.log("```````````````````````````````````");
   }
 }
+
+if(err){
+    console.log("Error!!!");
+  }
