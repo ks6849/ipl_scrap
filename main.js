@@ -100,3 +100,16 @@ function allMatchPageCb(err, res, html) {
 if(err){
     console.log("Error!!!");
   }
+
+/////////////////////////////////
+function allMatchPageCb(err, res, html) {
+  if(err){
+    console.log("Error!!!");
+  }
+  if (!err) {
+    let $ = cheerio.load(html);
+    let allScoreCardLink = $('a[data-hover="Scorecard"]');
+    // console.log(allScoreCardLink.length);
+    let count = 0;
+  
+
