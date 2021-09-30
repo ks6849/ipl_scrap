@@ -6,6 +6,9 @@ let scoreCardObj = require("./scoreCard");
 request(url, cb);
 
 function cb(err, res, html) {
+  if(err){
+    console.log("Error!!!");
+  }
   if (!err) {
     let searchTool = cheerio.load(html);
     let link = searchTool(".widget-items.cta-link a");
