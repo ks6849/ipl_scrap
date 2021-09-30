@@ -28,8 +28,11 @@ function cb(err,res,html){
             let teamNameElement = $(scorecardArr[i]).find("h5");
             let teamName = teamNameElement.text();
             teamName = teamName.split("INNINGS")[0];
-            teamName = teamName.trim();
+            teamName = teamName.trim(); // try to trim
             // console.log(teamName);
+            if(err){
+                console.log("erro!!!");
+            }
             let batsmanTableBodyAllRow = $(scorecardArr[i]).find(".table.batsman tbody tr");
             // console.log(batsmanTableBodyAllRow.length);
             for(let i=0 ; i<batsmanTableBodyAllRow.length ; i++){
@@ -40,9 +43,7 @@ function cb(err,res,html){
                     console.log(playerName); 
                 }
             }
-
             console.log("```````````````````````````````````");
-
         }
         
         
