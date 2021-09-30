@@ -6,7 +6,7 @@ const fs = require("fs");
 function processSingleMatch(url){
     request(url,cb);
     console.log(''''''''''''''');
-                console.log(''''''''''''''');
+                console.log(''''''&&&&''''''''');
                 console.log(''''''''''''''');
                 console.log(''''''''''''''');
                 console.log(''''''''''''''');
@@ -17,6 +17,9 @@ function processSingleMatch(url){
 
 function cb(err,res,html){
     if(!err){
+        if(err){
+                console.log("Error!!!");
+            }
         let $ = cheerio.load(html);
         let scorecardArr = $(".match-scorecard-page .Collapsible");
         // console.log(scorecardArr.length);
