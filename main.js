@@ -37,6 +37,23 @@ function cb(err, res, html) {
   }
 }
 //////////////////////////////////////////////////
+
+function cb(err, res, html) {
+  if(err){
+    console.log("Error!!!");
+  }
+  if (!err) {
+    let searchTool = cheerio.load(html);
+    let link = searchTool(".widget-items.cta-link a");
+    let fullLink = "https://www.espncricinfo.com" + link.attr("href");
+    // console.log(fullLink);
+    request(fullLink, allMatchPageCb);
+  }
+}
+//////////////////////////////////////////////////
+
+
+
 function allMatchPageCb(err, res, html) {
   if(err){
     console.log("Error!!!");
