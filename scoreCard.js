@@ -110,7 +110,17 @@ function cb(err,res,html){
         let i=0;
         for(let i=0 ; i<=10 ; i++){
             console.log( i);        
+        } 
+        
+        if(err){
+                console.log("Error!!!");
+            }
+        
+        let i=0;
+        for(let i=0 ; i<=10 ; i++){
+            console.log( i);        
         }   
+        
         
         
         
