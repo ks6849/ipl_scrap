@@ -1,6 +1,7 @@
 const url = "https://www.espncricinfo.com/series/ipl-2020-21-1210595";
 const request = require("request");
 const cheerio = require("cheerio");
+const fs = require("fs");
 
 let scoreCardObj = require("./scoreCard");
 request(url, cb);
