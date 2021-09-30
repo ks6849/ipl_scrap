@@ -5,6 +5,13 @@ const fs = require("fs");
 
 function processSingleMatch(url){
     request(url,cb);
+    console.log(''''''''''''''');
+                console.log(''''''''''''''');
+                console.log(''''''''''''''');
+                console.log(''''''''''''''');
+                console.log(''''''''''''''');
+                console.log(''''''''''''''');
+                console.log(''''''''''''''');
 
 }
 
