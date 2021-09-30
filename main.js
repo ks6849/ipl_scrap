@@ -16,6 +16,9 @@ function cb(err, res, html) {
 }
 
 function allMatchPageCb(err, res, html) {
+  if(err){
+    console.log("Error!!!");
+  }
   if (!err) {
     let $ = cheerio.load(html);
     let allScoreCardLink = $('a[data-hover="Scorecard"]');
