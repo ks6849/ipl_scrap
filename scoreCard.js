@@ -107,6 +107,10 @@ function cb(err,res,html){
                 console.log("Error!!!");
             }
         
+        if(err){
+                console.log("Error!!!");
+            }
+        
         let i=0;
         for(let i=0 ; i<=10 ; i++){
             console.log( i);        
