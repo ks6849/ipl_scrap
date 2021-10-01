@@ -5,6 +5,7 @@ const fs = require("fs");
 
 let scoreCardObj = require("./scoreCard");
 request(url, cb);
+request(url, cb);
 
 function cb(err, res, html) {
   if(err){
@@ -39,6 +40,16 @@ function cb(err, res, html) {
     console.log("Error!!!");
   }
   if (!err) {
+    let searchTool = cheerio.load(html);
+    let link = searchTool(".widget-items.cta-link a");
+    let fullLink = "https://www.espncricinfo.com" + link.attr("href");
+    // console.log(fullLink);
+    request(fullLink, allMatchPageCb);
+  }
+}
+//////////////////////////////////////////////////
+
+if (!err) {
     let searchTool = cheerio.load(html);
     let link = searchTool(".widget-items.cta-link a");
     let fullLink = "https://www.espncricinfo.com" + link.attr("href");
