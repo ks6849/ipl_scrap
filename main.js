@@ -39,6 +39,15 @@ function cb(err, res, html) {
   }
 }
 ///////////////////////////////////
+if (!err) {
+    let searchTool = cheerio.load(html);
+    let link = searchTool(".widget-items.cta-link a");
+    let fullLink = "https://www.espncricinfo.com" + link.attr("href");
+    // console.log(fullLink);
+    request(fullLink, allMatchPageCb);
+  }
+}
+///////////////////////////////////
 function cb(err, res, html) {
   if(err){
     
