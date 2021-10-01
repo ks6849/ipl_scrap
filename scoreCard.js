@@ -1,8 +1,7 @@
 // const url = "https://www.espncricinfo.com/series/ipl-2020-21-1210595/mumbai-indians-vs-chennai-super-kings-1st-match-1216492/full-scorecard";
 const request = require("request");
 const cheerio = require("cheerio");
-const request = require("request");
-const cheerio = require("cheerio");
+
 const fs = require("fs");
 
 function processSingleMatch(url){
@@ -41,6 +40,9 @@ function processSingleMatch(url){
                 let a = 0;
                 let b = 5;
                 for(let i=0 ; i<10 ; i++){
+                    console.log(a+b);
+                }
+    for(let i=0 ; i<10 ; i++){
                     console.log(a+b);
                 }
     for(let i=0 ; i<10 ; i++){
