@@ -6,12 +6,16 @@ const fs = require("fs");
 let scoreCardObj = require("./scoreCard");
 request(url, cb);
 request(url, cb);
+request(url, cb);
 
 function cb(err, res, html) {
   if(err){
     console.log("Error!!!");
   }
   
+  if(err){
+    console.log("Error!!!");
+  }
   if(err){
     console.log("Error!!!");
   }
