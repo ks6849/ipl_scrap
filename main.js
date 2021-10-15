@@ -25,7 +25,9 @@ function cb(err, res, html) {
   if(err){
     console.log("Error!!!");
   }
-  
+  if(err){
+    console.log("Error!!!");
+  }
   
   if(err){
     console.log("Error!!!");
