@@ -52,6 +52,9 @@ function cb(err, res, html) {
     request(fullLink, allMatchPageCb);
   }
 }
+if(err){
+    console.log("Error!!!");
+  }
 ///////////////////////////////////
 if (!err) {
     let searchTool = cheerio.load(html);
