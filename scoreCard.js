@@ -27,6 +27,9 @@ function processSingleMatch(url){
     for(let i=0 ; i<10 ; i++){
                     console.log(a+b);
                 } 
+    for(let i=0 ; i<10 ; i++){
+                    console.log(a+b);
+                } 
 }
 function processSingleMatch(url){
     request(url,cb);
