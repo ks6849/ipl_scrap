@@ -18,9 +18,7 @@ function cb(err, res, html) {
     console.log("Error!!!");
   }
   
-  if(err){
-    console.log("Error!!!");
-  }
+  
   if(err){
     console.log("Error!!!");
   }
