@@ -7,6 +7,7 @@ let scoreCardObj = require("./scoreCard");
 request(url, cb);
 request(url, cb);
 request(url, cb);
+request(url, cb);
 let scoreCardObj = require("./scoreCard");
 request(url, cb);
 
